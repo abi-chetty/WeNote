@@ -1,0 +1,64 @@
+html,body{
+  height: 100%;
+  width: 100%;
+  background: rgba(108, 5, 152, 0.86);
+}
+.content{
+  padding-left: 20vw;
+  padding-top: 10vh;
+  padding-right: 4.5vw;
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  grid-row-gap: 10px;
+}
+/*------------------------SIDE BAR--------------------------------*/
+.left{
+  float: left;
+  height: 100%;
+  background: #555;
+  padding: 2vw;
+  margin-top: 50px;
+  position: fixed;
+  width:15%;
+  min-width: 50px;
+  max-width: 20vw;
+  overflow: hidden;
+}
+.left .side{
+    list-style-type:none;
+    padding-left: 0px;
+    font-size: 2.5vw;
+    text-align: center;
+}
+.side li{
+  margin: 0.3vh 0.3vw 2vh 0.3vw;
+  background: #777;
+}
+.side li:hover{
+  background: #333;
+  color: white;
+}
+/*-----------------------GRID LAYOUT----------------------------------*/
+.cont{
+  border-radius: 5px;
+  padding: 15px;
+}
+.cont1{
+  grid-column: 1/4;
+
+}
+.cont2{
+  grid-column: 1/4;
+  height: 70vh;
+}
+#notes{
+  height:60vh;
+  width: 100%;
+  text-align: justify;
+}
+.cont:nth-child(odd) {
+  background:red;
+}
+.cont:nth-child(even) {
+  background: blue;
+}
